@@ -1,0 +1,240 @@
+﻿@font-face {
+    font-family: "Metropolis";
+    src: url("assets/Metropolis-Regular.woff");
+}
+
+:root {
+    --light-grey: #A9A9A9;
+    --dark-grey: #141414;
+    --transparent-grey: rgb(0,0,0,0.70);
+    --black: #0C0C0C;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    background-color: var(--transparent-grey);
+    font-family: "Metropolis";
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+section{
+    padding: 50px;
+}
+
+section div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0 50px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-grey);
+    font-weight: 900;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    z-index: 0;
+}
+
+#dots {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.intro,
+.intro div {
+    background-color: var(--black);
+    height: 100vh;
+}
+
+.intro div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro div h1 span {
+    color: var(--light-grey);
+}
+
+.about div:not(.divider){
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    text-align: center;
+}
+
+.about div img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.skills .skills-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 0 0 calc(100% / 6 - 20px);
+    margin: 10px auto;
+}
+
+.skill h4 {
+    text-align: center;
+}
+
+.skill div {
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skill#html div {
+    background-image: url("assets/html-5.svg");
+}
+
+.skill#css div {
+    background-image: url("assets/css-3.svg");
+}
+
+.skill#bootstrap div {
+    background-image: url("assets/bootstrap-5.svg");
+}
+
+.skill#python div {
+    background-image: url("assets/python.svg");
+}
+
+.skill#php div {
+    background-image: url("assets/php.svg");
+}
+
+.skill#mysql div {
+    background-image: url("assets/mysql.svg");
+}
+
+.skill#firebase div {
+    background-image: url("assets/firebase.svg");
+}
+
+.skill#flutter div {
+    background-image: url("assets/flutter.svg");
+}
+
+.skill#cplusplus div {
+    background-image: url("assets/c-plus-plus.svg");
+}
+
+.skill#java div {
+    background-image: url("assets/java.svg");
+}
+
+.skill#jenkins div {
+    background-image: url("assets/jenkins.svg");
+}
+
+.skill#jira div {
+    background-image: url("assets/jira.svg");
+}
+
+.projects {
+
+}
+
+.contact {
+
+}
+
+
+
+footer {
+    padding: 25px;
+    background-color: var(--black);
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.divider { 
+    display: table;
+    margin: 40px auto;
+}
+
+.divider span {
+    display: table-cell;
+    position: relative;
+}
+
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 20px;
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.divider span:first-child {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#fff));
+    background-image: -webkit-linear-gradient(180deg, transparent, #fff);
+    background-image: -moz-linear-gradient(180deg, transparent, #fff);
+    background-image: -o-linear-gradient(180deg, transparent, #fff);
+    background-image: linear-gradient(90deg, transparent, #fff);
+}
+
+.divider span:nth-child(2) {
+    color: #ffffff;
+    padding: 0px 5px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.divider span:last-child {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #fff, transparent);
+    background-image: -moz-linear-gradient(180deg, #fff, transparent);
+    background-image: -o-linear-gradient(180deg, #fff, transparent);
+    background-image: linear-gradient(90deg, #fff, transparent);
+}

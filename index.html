@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Antreas Lamprou | E-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/person.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="particles-js"></section>
+    <section id="dots"></section>
+
+    <section class="intro">
+        <div>
+            <h1>
+                Hello, i am <span>Antreas Lamprou</span>
+                <br />a <span>full-stack web developer</span> student
+                <br />and this is my <span>e-portfolio</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="divider"><span></span><h2>About</h2><span></span></div>
+        <div>
+            <img src="assets/potrait.jpeg" draggable="false" />
+            <h3>I am a studen at University of Central Lancashire, doing my Bachelor's Degree in Computing. I am currently on my 4th Year doing my thesis on Web and AI. I have work experience from working as an intern front-end web developer in HF Markets Ltd. You can find my CV <a href="https://1drv.ms/w/c/8696449753f7525e/EQQLiFTNj4xCoTHstHjZeGkBIlsHaTHQDwCvaydrP5b_dA?e=i0bfnq" target="_blank">here ↗</a>.</h3>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="divider"><span></span><h2>Skills</h2><span></span></div>
+        <div class="skills-flexbox">
+            <div class="skill" id="html">
+                <div></div>
+                <h4>HTML</h4>
+            </div>
+
+            <div class="skill" id="css">
+                <div></div>
+                <h4>CSS</h4>
+            </div>
+
+            <div class="skill" id="bootstrap">
+                <div></div>
+                <h4>Bootstrap</h4>
+            </div>
+
+            <div class="skill" id="python">
+                <div></div>
+                <h4>Python</h4>
+            </div>
+
+            <div class="skill" id="php">
+                <div></div>
+                <h4>PHP</h4>
+            </div>
+
+            <div class="skill" id="mysql">
+                <div></div>
+                <h4>MySQL</h4>
+            </div>
+
+            <div class="skill" id="firebase">
+                <div></div>
+                <h4>Firebase</h4>
+            </div>
+
+            <div class="skill" id="flutter">
+                <div></div>
+                <h4>Flutter</h4>
+            </div>
+
+            <div class="skill" id="cplusplus">
+                <div></div>
+                <h4>C++</h4>
+            </div>
+
+            <div class="skill" id="java">
+                <div></div>
+                <h4>Java</h4>
+            </div>
+
+            <div class="skill" id="jenkins">
+                <div></div>
+                <h4>Jenkins</h4>
+            </div>
+
+            <div class="skill" id="jira">
+                <div></div>
+                <h4>Jira</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="divider"><span></span><h2>Projects</h2><span></span></div>
+    </section>
+
+    <section class="contact">
+        <div class="divider"><span></span><h2>Contact</h2><span></span></div>
+    </section>
+
+    <footer>
+        <p>Antreas Lamprou® 2025</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- Load particles.js -->
+<script src="particles.js"></script>
+
+<!-- Configuration script for particles -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": true,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    });
+</script>
+
+<!-- Configuration script for dots -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        particlesJS('dots', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": true,
+                    "attract": {
+                        "enable": false
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": true
+                },
+            },
+            "retina_detect": true
+        });
+    });
+</script>
