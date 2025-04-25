@@ -2,19 +2,23 @@
 <html>
 <head>
     <title>Antreas Lamprou | E-Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/person.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/person.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <section id="particles-js"></section>
     <section id="dots"></section>
 
-    <section class="intro">
+    <section class="intro scroll-next">
         <div>
-            <h1>
+            <!--<h1>
                 Hello, i am <span>Antreas Lamprou</span>
-                <br />a <span>full-stack web developer</span> student
+                <br />a <span>full-stack web developer</span>
                 <br />and this is my <span>e-portfolio</span>
+            </h1>-->
+            <h1>
+                Hello, i am <span id="typed-text"></span>
             </h1>
         </div>
     </section>
@@ -22,88 +26,275 @@
     <section class="about">
         <div class="divider"><span></span><h2>About</h2><span></span></div>
         <div>
-            <img src="assets/potrait.jpeg" draggable="false" />
-            <h3>I am a studen at University of Central Lancashire, doing my Bachelor's Degree in Computing. I am currently on my 4th Year doing my thesis on Web and AI. I have work experience from working as an intern front-end web developer in HF Markets Ltd. You can find my CV <a href="https://1drv.ms/w/c/8696449753f7525e/EQQLiFTNj4xCoTHstHjZeGkBIlsHaTHQDwCvaydrP5b_dA?e=i0bfnq" target="_blank">here ↗</a>.</h3>
+            <img src="assets/images/potrait.jpeg" draggable="false" />
+            <h3>I am a studen at University of Central Lancashire, doing my Bachelor's Degree in Computing. I am currently on my 4th Year doing my thesis on Web and AI. I have work experience from working as an intern front-end web developer in HF Markets Ltd. You can find my CV <a href="https://1drv.ms/w/c/8696449753f7525e/EQQLiFTNj4xCoTHstHjZeGkBIlsHaTHQDwCvaydrP5b_dA?e=i0bfnq" target="_blank">here <i class="fa-solid fa-arrow-up-right-from-square"></i></a>.</h3>
         </div>
     </section>
 
     <section class="skills">
         <div class="divider"><span></span><h2>Skills</h2><span></span></div>
-        <div class="skills-flexbox">
-            <div class="skill" id="html">
-                <div></div>
-                <h4>HTML</h4>
+        <h3>Front End:</h3>
+        <div class="slider" id="slider1">
+            <div class="slide-track">
+                <div class="skill slide" id="html">
+                    <div></div>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill slide" id="css">
+                    <div></div>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill slide" id="scss">
+                    <div></div>
+                    <h4>SCSS</h4>
+                </div>
+                <div class="skill slide" id="javascript">
+                    <div></div>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill slide" id="bootstrap">
+                    <div></div>
+                    <h4>Bootstrap</h4>
+                </div>
             </div>
+        </div>
 
-            <div class="skill" id="css">
-                <div></div>
-                <h4>CSS</h4>
+        <h3>Back End:</h3>
+        <div class="slider" id="slider2">
+            <div class="slide-track reverse">
+                <div class="skill slide" id="python">
+                    <div></div>
+                    <h4>Python</h4>
+                </div>
+
+                <div class="skill slide" id="php">
+                    <div></div>
+                    <h4>PHP</h4>
+                </div>
+
+                <div class="skill slide" id="flutter">
+                    <div></div>
+                    <h4>Flutter</h4>
+                </div>
+
+                <div class="skill slide" id="cplusplus">
+                    <div></div>
+                    <h4>C++</h4>
+                </div>
+
+                <div class="skill slide" id="java">
+                    <div></div>
+                    <h4>Java</h4>
+                </div>
             </div>
+        </div>
 
-            <div class="skill" id="bootstrap">
-                <div></div>
-                <h4>Bootstrap</h4>
+        <h3>Databases:</h3>
+        <div class="slider" id="slider3">
+            <div class="slide-track">
+
+                <div class="skill slide" id="mysql">
+                    <div></div>
+                    <h4>MySQL</h4>
+                </div>
+
+                <div class="skill slide" id="sqlserver">
+                    <div></div>
+                    <h4>SQL Server</h4>
+                </div>
+
+                <div class="skill slide" id="postgresql">
+                    <div></div>
+                    <h4>PostgreSQL</h4>
+                </div>
+
+                <div class="skill slide" id="firebase">
+                    <div></div>
+                    <h4>Firebase</h4>
+                </div>
+
+                <div class="skill slide" id="mongo">
+                    <div></div>
+                    <h4>Mongo</h4>
+                </div>
+
             </div>
+        </div>
 
-            <div class="skill" id="python">
-                <div></div>
-                <h4>Python</h4>
+        <h3>Tools:</h3>
+        <div class="slider" id="slider4">
+            <div class="slide-track">
+                <div class="skill slide" id="jenkins">
+                    <div></div>
+                    <h4>Jenkins</h4>
+                </div>
+
+                <div class="skill slide" id="jira">
+                    <div></div>
+                    <h4>Jira</h4>
+                </div>
+
+                <div class="skill slide" id="git">
+                    <div></div>
+                    <h4>Git</h4>
+                </div>
+
+                <div class="skill slide" id="confluence">
+                    <div></div>
+                    <h4>Confluence</h4>
+                </div>
+
+                <div class="skill slide" id="postman">
+                    <div></div>
+                    <h4>Postman</h4>
+                </div>
             </div>
-
-            <div class="skill" id="php">
-                <div></div>
-                <h4>PHP</h4>
-            </div>
-
-            <div class="skill" id="mysql">
-                <div></div>
-                <h4>MySQL</h4>
-            </div>
-
-            <div class="skill" id="firebase">
-                <div></div>
-                <h4>Firebase</h4>
-            </div>
-
-            <div class="skill" id="flutter">
-                <div></div>
-                <h4>Flutter</h4>
-            </div>
-
-            <div class="skill" id="cplusplus">
-                <div></div>
-                <h4>C++</h4>
-            </div>
-
-            <div class="skill" id="java">
-                <div></div>
-                <h4>Java</h4>
-            </div>
-
-            <div class="skill" id="jenkins">
-                <div></div>
-                <h4>Jenkins</h4>
-            </div>
-
-            <div class="skill" id="jira">
-                <div></div>
-                <h4>Jira</h4>
-            </div>
-
         </div>
     </section>
 
     <section class="projects">
         <div class="divider"><span></span><h2>Projects</h2><span></span></div>
+        <div class="projects-flexbox">
+            <div class="project">
+                <div class="img-container">
+                    <img src="assets/images/uclan-shop.png" draggable="false" />
+                </div>
+                <span class="languages">
+                    <span class="skill" id="html">
+                        <span></span>
+                    </span>
+                    <span class="skill" id="css">
+                        <span></span>
+                    </span>
+                    <span class="skill" id="javascript">
+                        <span></span>
+                    </span>
+                    <span class="skill" id="php">
+                        <span></span>
+                    </span>
+                    <span class="skill" id="mysql">
+                        <span></span>
+                    </span>
+                </span>
+                <div class="description">
+                    <div>
+                        <h3>Uclan Online Shop</h3>
+                        <p>This is a university (Year 2) project made with simple html, css on front-end and php on backend. It usese php to register and log in users so they can order the merch. Comments and reviews are available once a user is logged in. </p>
+                    </div>
+                    <div class="links">
+                        <a href="https://uclanshop.infinityfreeapp.com" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/antreaslamprou/UCLan-Online-Shop" target="_blank">Project Files <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contact">
         <div class="divider"><span></span><h2>Contact</h2><span></span></div>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
     </section>
 
     <footer>
         <p>Antreas Lamprou® 2025</p>
     </footer>
+  
+    <script>
+        const texts = ["Antreas Lamprouu", "Full-Stack Developerr"];
+        const speed = 100; // Typing speed in ms
+        const deleteSpeed = 50; // Deleting speed
+        const pauseBetween = 1000; // Pause between phrases
+
+        let i = 0;
+        let j = 0;
+        let isDeleting = false;
+        let currentText = '';
+
+        // Create cursor element
+        const cursor = document.createElement('span');
+        cursor.className = 'cursor';
+        cursor.textContent = '|';
+        document.getElementById("typed-text").after(cursor);
+
+        function typeWriter() {
+            const element = document.getElementById("typed-text");
+
+            if (isDeleting) {
+                // Deleting phase
+                currentText = texts[i].substring(0, j - 2);
+                j--;
+
+                if (j === 0) {
+                    isDeleting = false;
+                    i = (i + 1) % texts.length;
+                    setTimeout(typeWriter, pauseBetween);
+                    return;
+                }
+            } else {
+                // Typing phase
+                currentText = texts[i].substring(0, j + 1);
+                j++;
+
+                if (j === texts[i].length) {
+                    isDeleting = true;
+                    setTimeout(typeWriter, pauseBetween);
+                    return;
+                }
+            }
+
+            element.textContent = currentText;
+            setTimeout(typeWriter, isDeleting ? deleteSpeed : speed);
+        }
+
+        // Start the animation
+        typeWriter();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initSlider('slider1', 'right');
+            initSlider('slider2', 'left');
+            initSlider('slider3', 'right');
+            initSlider('slider4', 'left');
+        });
+
+        function initSlider(sliderId, direction) {
+            const slider = document.getElementById(sliderId);
+            const track = slider.querySelector('.slide-track');
+            const slides = track.querySelectorAll('.slide');
+
+            track.innerHTML += track.innerHTML;
+
+            let position = 0;
+            const speed = (direction === 'right') ? -0.5 : 0.5;
+            let isPaused = false;
+
+            function animate() {
+                if (!isPaused) {
+                    position += speed;
+                    if (direction === 'right') {
+                        if (position <= -track.scrollWidth / 2) {
+                            position = 0;
+                        }
+                    } else {
+                        if (position >= 0) {
+                            position = -track.scrollWidth / 2;
+                        }
+                    }
+                    track.style.transform = `translateX(${position}px)`;
+                }
+                requestAnimationFrame(animate);
+            }
+
+            slider.addEventListener('mouseenter', () => isPaused = true);
+            slider.addEventListener('mouseleave', () => isPaused = false);
+
+            animate();
+        }
+    </script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: "Metropolis";
-    src: url("assets/Metropolis-Regular.woff");
+    src: url("assets/fonts/Metropolis-Regular.woff");
 }
 
 :root {
@@ -89,11 +89,12 @@ a {
     color: var(--light-grey);
 }
 
-.about div:not(.divider){
+.about div:not(.divider) {
     display: flex;
     flex-direction: row;
     gap: 50px;
     text-align: center;
+    align-items: center;
 }
 
 .about div img {
@@ -102,14 +103,13 @@ a {
     border-radius: 50%;
 }
 
-.skills .skills-flexbox {
-    display: flex;
-    flex-wrap: wrap;
+.skill {
+    margin: 10px auto;
+    transition: transform 0.4s ease;
 }
 
-.skill {
-    flex: 0 0 calc(100% / 6 - 20px);
-    margin: 10px auto;
+div.skill:hover {
+    transform: scale(1.2);
 }
 
 .skill h4 {
@@ -123,57 +123,167 @@ a {
     background-size: cover;
 }
 
-.skill#html div {
-    background-image: url("assets/html-5.svg");
+.skill span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.skill#css div {
-    background-image: url("assets/css-3.svg");
+.skill#html div ,
+.skill#html span {
+    background-image: url("assets/svgs/html-5.svg");
+}
+
+.skill#css div,
+.skill#css span {
+    background-image: url("assets/svgs/css-3.svg");
+}
+
+.skill#scss div {
+    background-image: url("assets/svgs/scss2.svg");
+}
+
+.skill#javascript div,
+.skill#javascript span {
+    background-image: url("assets/svgs/javascript.svg");
 }
 
 .skill#bootstrap div {
-    background-image: url("assets/bootstrap-5.svg");
+    background-image: url("assets/svgs/bootstrap-5.svg");
 }
 
 .skill#python div {
-    background-image: url("assets/python.svg");
+    background-image: url("assets/svgs/python.svg");
 }
 
-.skill#php div {
-    background-image: url("assets/php.svg");
+.skill#php div,
+.skill#php span {
+    background-image: url("assets/svgs/php.svg");
 }
 
-.skill#mysql div {
-    background-image: url("assets/mysql.svg");
+.skill#mysql div,
+.skill#mysql span {
+    background-image: url("assets/svgs/mysql.svg");
+}
+
+.skill#sqlserver div {
+    background-image: url("assets/svgs/microsoftsqlserver.svg");
+}
+
+.skill#postgresql div {
+    background-image: url("assets/svgs/postgresql.svg");
+}
+
+.skill#mongo div {
+    background-image: url("assets/svgs/mongo.svg");
 }
 
 .skill#firebase div {
-    background-image: url("assets/firebase.svg");
+    background-image: url("assets/svgs/firebase.svg");
 }
 
 .skill#flutter div {
-    background-image: url("assets/flutter.svg");
+    background-image: url("assets/svgs/flutter.svg");
 }
 
 .skill#cplusplus div {
-    background-image: url("assets/c-plus-plus.svg");
+    background-image: url("assets/svgs/c-plus-plus.svg");
 }
 
 .skill#java div {
-    background-image: url("assets/java.svg");
+    background-image: url("assets/svgs/java.svg");
 }
 
 .skill#jenkins div {
-    background-image: url("assets/jenkins.svg");
+    background-image: url("assets/svgs/jenkins.svg");
 }
 
 .skill#jira div {
-    background-image: url("assets/jira.svg");
+    background-image: url("assets/svgs/jira.svg");
 }
 
-.projects {
-
+.skill#git div {
+    background-image: url("assets/svgs/git.svg");
 }
+
+.skill#postman div {
+    background-image: url("assets/svgs/postman.svg");
+}
+
+.skill#confluence div {
+    background-image: url("assets/svgs/confluence.svg");
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border: 3px solid var(--light-grey);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px var(--light-grey);
+}
+
+.project .img-container {
+    flex: 2;
+    overflow: hidden;
+    max-width: 600px;
+    aspect-ratio: 1.5 !important;
+}
+
+.project .img-container img {
+    max-width: 1200px;
+    object-fit: cover; 
+    object-position: top left;
+    transform-origin: top left;
+    transition: transform 0.5s ease; 
+}
+
+.project img:hover {
+    transform: scale(0.6);
+    transform-origin: top left;
+}
+
+.project .languages {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.project .description {
+    flex: 1;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project .links {
+    display: flex;
+    margin: 20px 0;
+    gap: 30px;
+}
+
+.project a {
+    display: block;
+    padding: 15px;
+    border: 2px solid #036303;
+    box-shadow: 0px 0px 5px #036303;
+    border-radius: 25px;
+    width: max-content;
+    transition: transform 0.4s ease;
+}
+
+.project a:first-child {
+    border-color: #ad0606;
+    box-shadow: 0px 0px 5px #ad0606;
+}
+
+.project a:hover {
+    transform: scale(1.2);
+}
+
 
 .contact {
 
@@ -192,6 +302,26 @@ footer p {
 
 
 
+.cursor {
+    display: inline-block;
+    color: green !important;
+    margin-left: 2px;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+#typed-text {
+    display: inline-block;
+}
 
 
 
@@ -237,4 +367,35 @@ footer p {
     background-image: -moz-linear-gradient(180deg, #fff, transparent);
     background-image: -o-linear-gradient(180deg, #fff, transparent);
     background-image: linear-gradient(90deg, #fff, transparent);
+}
+
+
+
+/*test*/
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+.slide-track {
+    padding-top: 20px;
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track.reverse {
+    animation: scroll-reverse 20s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused; 
+}
+
+.slide {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
 }
