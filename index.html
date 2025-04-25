@@ -219,6 +219,23 @@
         cursor.textContent = '|';
         document.getElementById("typed-text").after(cursor);
 
+        function blinkCursor(callback) {
+            cursor.style.opacity = 1;
+            setTimeout(() => {
+                cursor.style.opacity = 0;
+                setTimeout(() => {
+                    cursor.style.opacity = 1;
+                    setTimeout(() => {
+                        cursor.style.opacity = 0;
+                        setTimeout(() => {
+                            cursor.style.opacity = 1;
+                        }, 200);
+                    }, 200);
+                }, 200);
+            }, 200);
+        }
+
+
         function typeWriter() {
             const element = document.getElementById("typed-text");
 
@@ -226,21 +243,25 @@
                 // Deleting phase
                 currentText = texts[i].substring(0, j - 2);
                 j--;
-
+                cursor.style.opacity = 1;
+                
                 if (j === 0) {
                     isDeleting = false;
                     i = (i + 1) % texts.length;
                     setTimeout(typeWriter, pauseBetween);
+                    blinkCursor();
                     return;
                 }
             } else {
                 // Typing phase
                 currentText = texts[i].substring(0, j + 1);
                 j++;
-
+                cursor.style.opacity = 1;
+                
                 if (j === texts[i].length) {
                     isDeleting = true;
                     setTimeout(typeWriter, pauseBetween);
+                    blinkCursor();
                     return;
                 }
             }

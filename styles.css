@@ -304,25 +304,10 @@ footer p {
 
 .cursor {
     display: inline-block;
-    color: green !important;
+    color: white !important;
     margin-left: 2px;
-    animation: blink 1.5s infinite;
+    opacity: 0;
 }
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-#typed-text {
-    display: inline-block;
-}
-
 
 
 
