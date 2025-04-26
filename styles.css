@@ -90,6 +90,7 @@ a {
 }
 
 .about div:not(.divider) {
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -318,23 +319,24 @@ div.skill:hover {
     justify-content: end;
 }
 
-
-
-.contact {
-}
-
-
-
 footer {
+    text-align: center;
     padding: 25px;
     background-color: var(--black);
+    color: var(--light-grey);
+}
+
+footer a {
+    padding: 0 25px;
+}
+
+footer a i {
+    padding-right: 5px;
 }
 
 footer p {
-    text-align: center;
+    padding-top: 25px;
 }
-
-
 
 .cursor {
     display: inline-block;
