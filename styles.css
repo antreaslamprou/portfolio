@@ -150,7 +150,8 @@ div.skill:hover {
     background-image: url("assets/svgs/javascript.svg");
 }
 
-.skill#bootstrap div {
+.skill#bootstrap div,
+.skill#bootstrap span {
     background-image: url("assets/svgs/bootstrap-5.svg");
 }
 
