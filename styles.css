@@ -192,7 +192,8 @@ div.skill:hover {
     background-image: url("assets/svgs/c-plus-plus.svg");
 }
 
-.skill#java div {
+.skill#java div,
+.skill#java span {
     background-image: url("assets/svgs/java.svg");
 }
 
