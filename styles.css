@@ -189,7 +189,8 @@ div.skill:hover {
     background-image: url("assets/svgs/flutter.svg");
 }
 
-.skill#cplusplus div {
+.skill#cplusplus div,
+.skill#cplusplus span {
     background-image: url("assets/svgs/c-plus-plus.svg");
 }
 
