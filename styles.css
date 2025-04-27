@@ -23,7 +23,7 @@ body {
     user-select: none; /* Standard */
 }
 
-section:not(:first-of-type){
+section:not(.no-padding) {
     padding: 50px;
 }
 
