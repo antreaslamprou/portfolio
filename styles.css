@@ -21,6 +21,11 @@ body {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    scroll-snap-type: y mandatory;
+}
+
+section.scroll-snap {
+    scroll-snap-align: start;
 }
 
 section:not(.no-padding) {

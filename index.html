@@ -256,29 +256,44 @@
     </footer>
 
     <script>
-        let lastScrollY = window.scrollY;
-        let isScrolling = false;
+        const scrolldiv1 = document.querySelector('.intro');
+        const scrolldiv2 = document.querySelector('.about');
 
         window.addEventListener('scroll', () => {
-            if (!isScrolling) {
-                if (window.scrollY < window.innerHeight && lastScrollY < window.scrollY) {
-                    isScrolling = true;
-                    window.scrollTo({
-                        top: window.innerHeight,
-                        behavior: 'smooth'
-                    });
-                    setTimeout(() => { isScrolling = false }, 400);
-                } else if (window.scrollY < window.innerHeight && lastScrollY > window.scrollY) {
-                    isScrolling = true;
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                    setTimeout(() => { isScrolling = false }, 400);
-                }
+            if (window.scrollY < window.innerHeight) {
+                scrolldiv1.classList.add("scroll-snap");
+                scrolldiv2.classList.add("scroll-snap");
+            } else {
+                scrolldiv1.classList.remove("scroll-snap");
+                scrolldiv2.classList.remove("scroll-snap");
             }
-            lastScrollY = window.scrollY;
         });
+
+
+
+        //let lastScrollY = window.scrollY;
+        //let isScrolling = false;
+
+        //window.addEventListener('scroll', () => {
+        //    if (!isScrolling) {
+        //        if (window.scrollY < window.innerHeight && lastScrollY < window.scrollY) {
+        //            isScrolling = true;
+        //            window.scrollTo({
+        //                top: window.innerHeight,
+        //                behavior: 'smooth'
+        //            });
+        //            setTimeout(() => { isScrolling = false }, 400);
+        //        } else if (window.scrollY < window.innerHeight && lastScrollY > window.scrollY) {
+        //            isScrolling = true;
+        //            window.scrollTo({
+        //                top: 0,
+        //                behavior: 'smooth'
+        //            });
+        //            setTimeout(() => { isScrolling = false }, 400);
+        //        }
+        //    }
+        //    lastScrollY = window.scrollY;
+        //});
     </script>
   
     <script>
