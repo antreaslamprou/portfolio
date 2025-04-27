@@ -14,7 +14,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     color: white;
     background-color: var(--transparent-grey);
     font-family: "Metropolis";
@@ -24,7 +23,7 @@ body {
     user-select: none; /* Standard */
 }
 
-section{
+section:not(:first-of-type){
     padding: 50px;
 }
 
