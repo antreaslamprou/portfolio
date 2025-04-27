@@ -257,20 +257,26 @@
 
     <script>
         let lastScrollY = window.scrollY;
+        let isScrolling = false;
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY < window.innerHeight && lastScrollY < window.scrollY) {
-                window.scrollTo({
-                    top: window.innerHeight,
-                    behavior: 'smooth'
-                });
-            } else if (window.scrollY < window.innerHeight && lastScrollY > window.scrollY) {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+            if (!isScrolling) {
+                if (window.scrollY < window.innerHeight && lastScrollY < window.scrollY) {
+                    isScrolling = true;
+                    window.scrollTo({
+                        top: window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => { isScrolling = false }, 1000);
+                } else if (window.scrollY < window.innerHeight && lastScrollY > window.scrollY) {
+                    isScrolling = true;
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    setTimeout(() => { isScrolling = false }, 400);
+                }
             }
-
             lastScrollY = window.scrollY;
         });
     </script>
