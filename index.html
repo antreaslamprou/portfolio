@@ -254,6 +254,26 @@
         </div>
         <p>Antreas Lamprou® 2025</p>
     </footer>
+
+    <script>
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < window.innerHeight && lastScrollY < window.scrollY) {
+                window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            } else if (window.scrollY < window.innerHeight && lastScrollY > window.scrollY) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            lastScrollY = window.scrollY;
+        });
+    </script>
   
     <script>
         const texts = ["Antreas Lamprouu", "Full-Stack Developerr"];
