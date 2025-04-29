@@ -16,7 +16,7 @@ body {
     padding: 0;
     color: white;
     background-color: var(--transparent-grey);
-    font-family: "Metropolis";
+    font-family: "Metropolis", "Georgia"; 
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
