@@ -431,10 +431,19 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-    .skill h4,{
+    .project img {
+        transform: scale(0.6)!important;
+    }
+    
+    .project img:hover {
+        transform: none!important;
+    }
+
+    .skill h4 {
         font-size: 1.2rem;
     }
+
     footer a {
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
 }
