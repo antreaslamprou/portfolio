@@ -52,7 +52,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+p ,
+button {
+    font-size: 1.2rem;
 }
 
 a {
@@ -423,4 +428,13 @@ footer p {
     display: inline-block;
     width: 200px;
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .skill h4,{
+        font-size: 1.2rem;
+    }
+    footer a {
+        padding: 0px 10px;
+    }
 }
