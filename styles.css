@@ -55,7 +55,8 @@ h3 {
     font-size: 1.8rem;
 }
 
-p ,
+h4,
+p,
 button {
     font-size: 1.2rem;
 }
@@ -336,7 +337,7 @@ footer {
 }
 
 footer a {
-    padding: 0 25px;
+    padding: 0 15px;
 }
 
 footer a i {
@@ -355,8 +356,6 @@ footer p {
 }
 
 
-
-
 .divider { 
     display: table;
     margin: 40px auto;
@@ -370,8 +369,8 @@ footer p {
 .divider span:first-child, .divider span:last-child {
     width: 50%;
     top: 20px;
-    -moz-background-size: 100% 2px; 	/* line width */
-    background-size: 100% 2px; 			/* line width */
+    -moz-background-size: 100% 2px; 	
+    background-size: 100% 2px; 			
     background-position: 0 0, 0 100%;
     background-repeat: no-repeat;
 }
@@ -400,9 +399,6 @@ footer p {
 }
 
 
-
-/*test*/
-
 .slider {
     width: 100%;
     overflow: hidden;
@@ -413,37 +409,10 @@ footer p {
 .slide-track {
     padding-top: 20px;
     display: inline-block;
-    animation: scroll 20s linear infinite;
-}
-
-.slide-track.reverse {
-    animation: scroll-reverse 20s linear infinite;
-}
-
-.slide-track:hover {
-  animation-play-state: paused; 
 }
 
 .slide {
     display: inline-block;
     width: 200px;
     text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-    .project img {
-        transform: scale(0.6)!important;
-    }
-    
-    .project img:hover {
-        transform: none!important;
-    }
-
-    .skill h4 {
-        font-size: 1.3rem !important;
-    }
-
-    footer a {
-        padding: 0 !important;
-    }
 }
