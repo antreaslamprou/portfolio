@@ -37,18 +37,15 @@ section div{
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    text-align: center;
-}
-
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
     margin: 0 50px;
+    text-align: center;
 }
 
 h3 {
@@ -99,7 +96,7 @@ a {
     color: var(--light-grey);
 }
 
-.about div:not(.divider) {
+.about .details {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -117,10 +114,6 @@ a {
 .skill {
     margin: 10px auto;
     transition: transform 0.4s ease;
-}
-
-div.skill:hover {
-    transform: scale(1.2);
 }
 
 .skill h4 {
@@ -372,6 +365,10 @@ div.skill:hover {
     gap: 30px;
 }
 
+.project .links i {
+    margin-left: 5px;
+}
+
 .project a {
     display: block;
     padding: 15px;
@@ -385,40 +382,6 @@ div.skill:hover {
 .project a:first-child {
     border-color: #ad0606;
     box-shadow: 0px 0px 5px #ad0606;
-}
-
-.project a:hover {
-    transform: scale(1.2);
-}
-
-
-.project.reverse {
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.project.reverse .img-container{
-    position: relative;
-}
-
-.project.reverse .img-container img {
-    position:absolute;
-    top:0;
-    right:0;
-    transform-origin: top right;
-}
-
-.project.reverse img:hover {
-    transform-origin: top right;
-}
-
-.project.reverse .languages{
-    left: 0;
-    right: 10px;
-}
-
-.project.reverse .links{
-    justify-content: end;
 }
 
 footer {
@@ -446,7 +409,6 @@ footer p {
     margin-left: 2px;
     opacity: 0;
 }
-
 
 .divider { 
     display: table;
@@ -490,7 +452,6 @@ footer p {
     background-image: linear-gradient(90deg, #fff, transparent);
 }
 
-
 .slider {
     width: 100%;
     overflow: hidden;
@@ -508,3 +469,145 @@ footer p {
     width: 200px;
     text-align: center;
 }
+
+@media (min-wdth: 992px){
+    div.skill:hover {
+        transform: scale(1.2);
+    }
+
+    .project a:hover {
+        transform: scale(1.2);
+    }
+
+    .project.reverse {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .project.reverse .img-container{
+        position: relative;
+    }
+
+    .project.reverse .img-container img {
+        position:absolute;
+        top:0;
+        right:0;
+        transform-origin: top right;
+    }
+
+    .project.reverse img:hover {
+        transform-origin: top right;
+    }
+
+    .project.reverse .languages{
+        left: 0;
+        right: 10px;
+    }
+
+    .project.reverse .links{
+        justify-content: end;
+    }
+
+    footer .lg-hidden {
+        display: none;
+    }
+}
+
+
+@media (max-width: 991px) {
+    h1 {
+        padding: 0 10px;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 10px 20px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+
+    .about .details {
+        flex-direction: column;
+    }
+
+    section:not(.no-padding) {
+        padding: 50px 100px;
+    }
+
+    .featured-project {
+        min-height: unset;
+    }
+
+    .project .description  {
+        justify-content: center;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .project .links {
+        justify-content: center!important;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .project .img-container {
+        display: none;
+    }
+
+    .project .img-container img {
+        max-width: 100%;
+    }
+
+    .project .languages {
+        left: 50% !important;
+        transform: translateX(-50%)!important;
+        width: max-content;
+    }
+
+    footer .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer span {
+        display: none;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section:not(.no-padding) {
+        padding: 20px 30px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .panel .slide {
+        width: 50%;
+    }
+
+    .featured-project {
+        flex-direction: unset !important;
+    }
+
+    .project .description {
+        width: 90%;
+    }
+}
+
