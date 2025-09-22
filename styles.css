@@ -181,6 +181,11 @@ div.skill:hover {
     background-image: url("assets/svgs/bootstrap-5.svg");
 }
 
+.skill#tailwind div,
+.skill#tailwind span {
+    background-image: url("assets/svgs/tailwind.svg");
+}
+
 .skill#python div {
     background-image: url("assets/svgs/python.svg");
 }
