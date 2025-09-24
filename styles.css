@@ -298,15 +298,16 @@ a {
 }
 
 .accordion::after {
-    content: '^';
-    font-size: 20px;
-    transform: rotateZ(180deg);
-    font-weight: bold;
-    margin-left: 10px;
+    content: '';
+    width: 25px;
+    height: 25px;
+    margin-right: -10px;
+    background-image: url('./assets/svgs/arrow.svg');
+    background-size: cover;
 }
 
 .active::after {
-    transform: rotateZ(0deg) translateY(10px);
+    transform: rotateZ(180deg);
 }
 
 .panel {
