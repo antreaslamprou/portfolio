@@ -211,7 +211,8 @@ a {
     background-image: url("assets/svgs/microsoftsqlserver.svg");
 }
 
-.skill#postgresql div {
+.skill#postgresql div,
+.skill#postgresql span {
     background-image: url("assets/svgs/postgresql.svg");
 }
 
