@@ -114,13 +114,12 @@ function loadSkills() {
         .then(data => {
             Object.entries(data).forEach(([type, skills]) => {
                 populateSection(skills, maps[type]);
+            });
 
             // Initialise slider and accordions after data load
             initSlider();
             initAccordions();
-
-        });
-    })
+        })
     .catch(error => console.error(error));
 
     // Populates a section with the items of the array
