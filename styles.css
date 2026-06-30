@@ -154,6 +154,11 @@ a {
     background-image: url("assets/svgs/node-js.svg");
 }
 
+.skill#net div ,
+.skill#net span {
+    background-image: url("assets/svgs/net.svg");
+}
+
 .skill#react div ,
 .skill#react span {
     background-image: url("assets/svgs/react.svg");
@@ -166,16 +171,16 @@ a {
 
 .skill#html div ,
 .skill#html span {
-    background-image: url("assets/svgs/html-5.svg");
+    background-image: url("assets/svgs/html.svg");
 }
 
 .skill#css div,
 .skill#css span {
-    background-image: url("assets/svgs/css-3.svg");
+    background-image: url("assets/svgs/css.svg");
 }
 
 .skill#scss div {
-    background-image: url("assets/svgs/scss2.svg");
+    background-image: url("assets/svgs/scss.svg");
 }
 
 .skill#javascript div,
@@ -185,7 +190,7 @@ a {
 
 .skill#bootstrap div,
 .skill#bootstrap span {
-    background-image: url("assets/svgs/bootstrap-5.svg");
+    background-image: url("assets/svgs/bootstrap.svg");
 }
 
 .skill#tailwind div,
@@ -216,6 +221,11 @@ a {
     background-image: url("assets/svgs/postgresql.svg");
 }
 
+.skill#redis div,
+.skill#redis span {
+    background-image: url("assets/svgs/redis.svg");
+}
+
 .skill#mongo div {
     background-image: url("assets/svgs/mongo.svg");
 }
@@ -242,6 +252,14 @@ a {
     background-image: url("assets/svgs/jenkins.svg");
 }
 
+.skill#azure div {
+    background-image: url("assets/svgs/azure.svg");
+}
+
+.skill#teamcity div {
+    background-image: url("assets/svgs/teamcity.svg");
+}
+
 .skill#jira div {
     background-image: url("assets/svgs/jira.svg");
 }
@@ -264,10 +282,6 @@ a {
 
 .skill#confluence div {
     background-image: url("assets/svgs/confluence.svg");
-}
-
-.skill#visualstudio div {
-    background-image: url("assets/svgs/visual-studio.svg");
 }
 
 

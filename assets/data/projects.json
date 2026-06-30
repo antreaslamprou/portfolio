@@ -1,0 +1,125 @@
+[
+    {
+        "image": "assets/images/futech.png",
+        "languages": [
+            "react", 
+            "javascript", 
+            "tailwind", 
+            "nodejs", 
+            "postgresql"
+        ],
+        "title": "Futech - Tech Shop",
+        "description": "A dummy company made to sell futuristic tech. This shop shows the revolution of websites as it is minimal yet functional, using the latest technologies.",
+        "links": [
+            {
+                "type": "live",
+                "url": "https://futech-henna.vercel.app/"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/futech"
+            }
+        ]
+    },
+    {
+        "image": "assets/images/uclan-shop-redesign.png",
+        "languages": [
+            "react", 
+            "typescript", 
+            "bootstrap", 
+            "nodejs", 
+            "mysql"
+        ],
+        "title": "Uclan Online Shop Redesign",
+        "description": "A redesign of the previously done assignment having the same functionality but using latest technologies like javascript frameworks and typescript.",
+        "links": [
+            {
+                "type": "live",
+                "url": "https://uclan-shop.onrender.com"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/uclan-online-shop-react"
+            }
+        ]
+    },
+    {
+        "image": "assets/images/uclan-shop.png",
+        "languages": [
+            "html", 
+            "css", 
+            "javascript", 
+            "php", 
+            "mysql"
+        ],
+        "title": "Uclan Online Shop",
+        "description": "A university project (Year 2) made with few resources and the basic languages of the web developement. It uses php to register and log in users so they can order the merch, while giving user the opportunity to create comments and reviews.",
+        "links": [
+            {
+                "type": "live",
+                "url": "https://uclanshop.infinityfreeapp.com"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/uclan-online-shop"
+            }
+        ]
+    },
+    {
+        "image": "assets/images/smart-home.png",
+        "languages": [
+            "cplusplus"
+        ],
+        "title": "Smart Home Console App",
+        "description": "A C++ university project (Year 3), that compose of a console application that can save rooms within a smart home. Within your smart home, rooms can be created, where inside the roomsm multiple devices of different types can be created. Fully editable and interactive rooms and devices.",
+        "links": [
+            {
+                "type": "video",
+                "url": "https://1drv.ms/v/c/8696449753f7525e/EWjZDRMH6BtOjkgNTwSLTkoBCKO2m2Mfu4NFCcYoPpXNcA?e=ig4jnE"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/cplusplus-projects"
+            }
+        ]
+    },
+    {
+        "image": "assets/images/deck-of-cards.png",
+        "languages": [
+            "javascript",
+            "html",
+            "css",
+            "bootstrap"
+        ],
+        "title": "Deck of Cards",
+        "description": "The javascript version of the java card game. Using mostly javascript for the animations, and the game mechanics making it an online game, with simple rules.",
+        "links": [
+            {
+                "type": "live",
+                "url": "https://antreaslamprou.github.io/deck-of-cards"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/deck-of-cards"
+            }
+        ]
+    },
+    {
+        "image": "assets/images/java-projects.png",
+        "languages": [
+            "java"
+        ],
+        "title": "Java Projects",
+        "description": "A set of 5 university projects (Year 1) made with java. Featuring inputs at runtime or take arguments as at compile time, made to complete simple taks.",
+        "links": [
+            {
+                "type": "live",
+                "url": "https://antreaslamprou.github.io/java-projects"
+            },
+            {
+                "type": "files",
+                "url": "https://github.com/antreaslamprou/java-projects"
+            }
+        ]
+    }
+]

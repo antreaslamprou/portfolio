@@ -1,0 +1,47 @@
+{
+    "featured": [
+        "HTML", 
+        "CSS", 
+        "React", 
+        "Bootstrap", 
+        "JavaScript", 
+        "Node.js", 
+        ".NET"
+    ],
+    "fullStack": [
+        "HTML", 
+        "CSS", 
+        "SCSS", 
+        "Bootstrap", 
+        "Tailwind", 
+        "React", 
+        "JavaScript", 
+        "TypeScript", 
+        "Node.js", 
+        "Python", 
+        ".NET", 
+        "C++", 
+        "PHP", 
+        "Flutter", 
+        "Java"
+    ],
+    "database": [
+        "MySQL", 
+        "SQL Server", 
+        "PostgreSQL", 
+        "Redis", 
+        "Firebase", 
+        "Mongo"
+    ],
+    "toolsPrograms": [
+        "Jira", 
+        "Confluence", 
+        "Git", 
+        "GitLab", 
+        "GitHub", 
+        "Azure", 
+        "Jenkins", 
+        "TeamCity", 
+        "Postman"
+    ]
+}
