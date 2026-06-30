@@ -109,7 +109,7 @@ function loadSkills() {
         "toolsPrograms" : panels[2],
     }
 
-    fetch("../assets/data/skills.json")
+    fetch("assets/data/skills.json")
         .then(response => response.json())
         .then(data => {
             Object.entries(data).forEach(([type, skills]) => {
@@ -150,7 +150,7 @@ function getSkillId(name) {
 
 function loadProjects() {
     const parent = document.getElementsByClassName("projects-flexbox")[0];
-    fetch("../assets/data/projects.json")
+    fetch("assets/data/projects.json")
     .then(response => response.json())
     .then(data => {
         data.forEach(project => {
