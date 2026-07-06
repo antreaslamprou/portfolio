@@ -248,6 +248,11 @@ a {
     background-image: url("assets/svgs/java.svg");
 }
 
+.skill#claudecode div,
+.skill#claudecode span {
+    background-image: url("assets/svgs/claudecode.svg");
+}
+
 .skill#jenkins div {
     background-image: url("assets/svgs/jenkins.svg");
 }
