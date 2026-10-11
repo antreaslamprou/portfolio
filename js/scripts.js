@@ -42,7 +42,7 @@ function initSlider() {
 }
 
 function typeWriter() {
-    const texts = ["Antreas Lamprou. ", "a Full-Stack Developer. "];
+    const texts = ["Antreas Lamprou. ", "a Full-Stack Engineer. "];
     const speed = 100; // Typing speed in ms
     const deleteSpeed = 50; // Deleting speed
     const pauseBetween = 1000; // Pause between phrases
